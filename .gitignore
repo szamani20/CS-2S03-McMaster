@@ -1,0 +1,14 @@
+out/
+.idea/
+*.iml
+
+### Linux ###
+*~
+
+.fuse_hidden*
+
+.directory
+
+.Trash-*
+
+.nfs*
