@@ -71,21 +71,27 @@ public class StreamConcept {
         System.out.println();
 
         List<Student> oldOnes = kings.stream().filter(
-                king->king.age>1000
+                king -> king.age > 1000
         ).collect(Collectors.toList());
         oldOnes.forEach(System.out::println);
         System.out.println();
 
         List<Student> oldAndLongName = kings.stream().filter(
-                king->king.age > 1000 &&
+                king -> king.age > 1000 &&
                         king.name.length() > 10
         ).collect(Collectors.toList());
         oldAndLongName.forEach(System.out::println);
         System.out.println();
 
         // Make great kings' names GREAT
-        kings.stream().forEach(king->king.name = king.name.toUpperCase());
+        kings.stream().forEach(king -> king.name = king.name.toUpperCase());
         kings.forEach(System.out::println);
+        System.out.println();
+
+        Double kingAgeAverage = kings.stream().collect(Collectors.averagingInt(
+                king -> king.age
+        ));
+        System.out.println(kingAgeAverage);
     }
 
     private void streamExample2() {
