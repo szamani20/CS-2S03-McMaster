@@ -13,6 +13,10 @@ can add these default methods to existing interfaces without breaking the code.
 Static methods in interfaces follow the same concept except that they cannot
 be overridden at all (unlike default methods that may be overridden)
 
+(Java 9 only) If default methods have some code in common, they can extract
+out that code into a private method in the interface. So private methods are
+allowed in interfaces as of Java 9.
+
 Interfaces can still provide full abstraction. Default method is an option and
 doesn't make Interface like Abstract class. They still have differences.
  */
@@ -51,10 +55,19 @@ public class InterfaceDefaultMethods implements InterfaceWithDefaultMethod {
 interface InterfaceWithDefaultMethod {
     default void newMethod() {
         System.out.println("This method is new");
+        duplicateCodeHere();
+    }
+
+    default void newMethod2() {
+        duplicateCodeHere();
     }
 
     static void staticMethod() {
         System.out.println("This cannot be overridden!");
+    }
+
+    private void duplicateCodeHere() {
+        // Put any code here
     }
 
     void existingMethod();

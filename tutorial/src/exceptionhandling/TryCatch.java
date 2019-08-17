@@ -54,14 +54,45 @@ public class TryCatch {
             System.out.println("finally block");
         }
 
+        // Let's also look at try-with-resources
+        try {
+            tryWithResourcesExample();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        // Look at this tricky example
         System.out.println(trickyFinally());
 
+        // And this one too
         try {
             return;
         } finally {
             System.out.println("Haha!");
         }
+    }
 
+    private void tryWithResourcesExample() throws FileNotFoundException {
+        // Old Java 7 style
+        try (FileOutputStream fileOutputStream = new FileOutputStream("ttt.txt");) {
+            String content = "We are writing this line in the output file.";
+            byte[] binaryContent = content.getBytes();
+            fileOutputStream.write(binaryContent);
+            System.out.println("The given String is written in the file successfully");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // New Java 9 style
+        FileOutputStream fileOutputStream = new FileOutputStream("ttt.txt");
+        try(fileOutputStream){
+            String content = "We are writing this line in the output file.";
+            byte[] binaryContent = content.getBytes();
+            fileOutputStream.write(binaryContent);
+            System.out.println("The given String is written in the file successfully");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private int trickyFinally() {
