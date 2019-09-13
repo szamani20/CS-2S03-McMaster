@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 HashMaps are used to store key-value pairs which is a Map based
 collection. There is no order in storing the pairs. Similar to
 HashTables but non-synchronized (operations are not performed safely

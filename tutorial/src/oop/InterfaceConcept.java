@@ -1,3 +1,9 @@
+/*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
 package oop;/*
 Interfaces are used for full abstraction. They look like classes, e.g. they
 have method signatures and variables but no implementation.

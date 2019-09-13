@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Stack is a data structure based on Last-In First-Out policy (LIFO).
 It is implemented in JDK by extending the Vector class.
 Stacks are used a lot in CPU design and Programming Language design

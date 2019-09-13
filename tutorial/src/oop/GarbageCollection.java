@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 When JVM starts up, it creates a heap area which is known as
 runtime data area. This is where all the objects (instances of class)
 are stored. Since this area is limited, it is required to manage this

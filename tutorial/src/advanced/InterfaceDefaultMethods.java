@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 The reason we have default methods in interfaces is to allow the developers to
 add new methods to the interfaces without affecting the classes that implements
 these interfaces.

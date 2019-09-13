@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 LinkedHashMap is a HashTable and LinkedList implementation of Map in
 Java. They maintain the insertion order.
 

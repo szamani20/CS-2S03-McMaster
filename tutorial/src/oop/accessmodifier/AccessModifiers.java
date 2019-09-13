@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Access modifiers are used to ensure encapsulation and protection
 of data and functionality of each class in Java.
 Generally, it's the best practice to keep as much as possible of data

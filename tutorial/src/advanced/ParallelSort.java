@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Array is divided into sub arrays, each one is sorted separately and in parallel
 with others, and then the sorted arrays are merged together. It obviously
 uses multithreading to sort sub arrays simultaneously.

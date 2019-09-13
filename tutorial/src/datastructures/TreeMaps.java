@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 TreeMap is an implementation of Red-Black tree. It has the advantages
 of a tree data structure but it is also sorted to the natural ordering
 of its keys (by re-structuring every time a node is added)

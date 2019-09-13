@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Method reference is a shorthand notation of a lambda expression
 to call a method
 Lambda Expression:

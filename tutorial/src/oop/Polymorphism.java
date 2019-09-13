@@ -1,3 +1,9 @@
+/*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
 package oop;/*
 Polymorphism allows us to perform a single action in different ways.
 For example each animal may make some sounds. Roar, meow, etc.

@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 This class is introduced to avoid NullPointerException that we
 frequently encounters if we do not perform null checks in our code.
 Using this class we can easily check whether a variable has null

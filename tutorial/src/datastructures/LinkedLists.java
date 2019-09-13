@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Unlike ArrayLists where elements are stored in a contiguous array-like
 stores, LinkedList items are tied to each other using pointers.
 Each element of a LinkedList not only contains the value of that

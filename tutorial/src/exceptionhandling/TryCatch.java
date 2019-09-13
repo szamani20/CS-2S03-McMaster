@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 An Exception is an event that interrupts the normal flow of the program.
 There are several cases for an exception to be thrown:
 Opening a non-existing file in your program, Network connection problem,

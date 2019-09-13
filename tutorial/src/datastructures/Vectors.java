@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Vectors are mostly like ArrayLists but unlike ArrayLists
 they are multi-thread friendly as they are synchronized.
 Therefore, they give poor performance on most of the regular operations

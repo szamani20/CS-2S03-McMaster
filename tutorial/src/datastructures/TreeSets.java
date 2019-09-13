@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Similar to HashSet except that it sorts the elements in ascending
 order while HashSet doesn't maintain any order. It's an implementation
 of a self-balancing Binary Search Tree.

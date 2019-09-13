@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Inaccurately, Thread is a part of a "process", a subprocess that can
 run concurrently with other threads. They are independent and have
 separate environment of execution. Threads share the memory of their

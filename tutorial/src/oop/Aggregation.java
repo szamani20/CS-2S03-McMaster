@@ -1,3 +1,9 @@
+/*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
 package oop;/*
 Aggregation is a directional association relationship between two classes
 A one-way association that represents a HAS-A relationship.

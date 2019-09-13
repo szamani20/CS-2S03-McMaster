@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Simple set of objects. Literally like a set in mathematics.
 No duplicates, no order over items. It doesn't even remain constant
 over time. The main advantage is that it retrieves an item in O(1),

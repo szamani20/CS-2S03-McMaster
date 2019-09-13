@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Java Annotations allow us to add metadata information into our
 source code. They have no direct effect on the execution of operations
 they annotate.

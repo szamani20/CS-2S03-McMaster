@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 ArrayDequeue is a concrete implementation of the Dequeue interface
 (alongside with LinkedList). ArrayDequeue is like a Double Queue
 in which items could be added or removed from both sides.

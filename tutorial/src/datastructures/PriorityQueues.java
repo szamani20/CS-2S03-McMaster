@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Actually Queue is an interface in Java and we should use a concrete
 class that implements it in order to take advantage of the queue
 concept.

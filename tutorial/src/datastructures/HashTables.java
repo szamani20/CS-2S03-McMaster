@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Mostly like HashMaps except that they are thread safe. Manipulating
 a HashMap in a multi threaded environment will throw exception
 but that's not the case with HashTable

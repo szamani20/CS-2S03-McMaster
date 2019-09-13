@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 By using streams we can perform various aggregate operations on the
 data returned from collections, arrays, Input/Output operations.
 stream() method returns a stream of all elements of a collection

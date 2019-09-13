@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Serialization is a mechanism to convert an object into stream of bytes
 so that it can be written into a file, transported through a network
 or stored into database.

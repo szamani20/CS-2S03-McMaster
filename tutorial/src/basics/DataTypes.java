@@ -1,3 +1,9 @@
+/*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
 package basics;// There are two kinds of data types in Java. Primitive and non-primitive
 // Primitives include int, short, byte, long, double, char, boolean, etc.
 // Non-primitives include everything else, i.e. objects

@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Regular expressions are used for defining String patterns that can
 be used for searching, manipulating and editing a text.
 Regex has a ton of rules and mastering all of them is not an

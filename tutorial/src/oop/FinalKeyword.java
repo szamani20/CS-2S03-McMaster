@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 We have final variables, final methods, and final classes in Java.
 Generally and inaccurately, final keyword makes a property unchangeable.
  */

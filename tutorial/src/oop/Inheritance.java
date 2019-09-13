@@ -1,3 +1,9 @@
+/*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
 package oop;/*
 The process by which one class acquires the properties i.e. data members and
 functionalities i.e. methods of another class is called inheritance.

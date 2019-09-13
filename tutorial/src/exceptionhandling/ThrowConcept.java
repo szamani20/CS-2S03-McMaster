@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Built-in exceptions like ArithmeticException are defined to be thrown
 upon certain events. We may also throw an exception in other cases as well.
 For example division by zero is illegal normally. In our program we may also

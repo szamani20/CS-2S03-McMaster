@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 It would be nice if we could write a single sort method that could sort
 the elements in an Integer array, a String array, or an array of any
 type that supports ordering.

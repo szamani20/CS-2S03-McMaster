@@ -1,3 +1,9 @@
+/*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
 package oop;/*
 Let's explain by an example. The Animal class has a sound() method. But since
 every animal has its own specific sound, it is pointless to implement the

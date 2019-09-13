@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 A lambda expression is an anonymous function. A function that
 doesn't have a name and doesn't belong to any class.
 To create a Lambda Expression, we specify input parameters

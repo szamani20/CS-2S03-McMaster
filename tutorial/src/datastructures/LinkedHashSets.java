@@ -1,4 +1,10 @@
 /*
+Created and maintained by Soroush Zamani
+Summer and Fall 2019
+Department of Computing and Software
+McMaster University
+ */
+/*
 Just like the ArrayList keeps the ordering of insertion.
 But one important difference:
 No duplicate item is allowed for the sake of high insertion and search
