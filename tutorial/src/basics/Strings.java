@@ -163,6 +163,8 @@ public class Strings {
         System.out.println(university2.substring(2));
 
         university2 = university2.concat(" University");
+        // Another way is to use the + operator, but it's not recommended
+        university2 = university2 + " University";
         System.out.println(university2);
 
         // Undo the concatenation
