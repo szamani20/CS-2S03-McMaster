@@ -38,44 +38,44 @@ import java.io.*;
 
 public class TryCatch {
     public TryCatch() {
-        try {
-            // We must put the call to a method with throws keyword
-            // inside a try-catch block or another method which also
-            // throws that exception (or its parents)
-            handleCheckedException();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            // We must put the call to a method with throws keyword
+//            // inside a try-catch block or another method which also
+//            // throws that exception (or its parents)
+//            handleCheckedException();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
-        try {
-            System.out.println("First statement of try block");
-            int num = 23 / 0;
-            System.out.println("No way! " + num);
-            // Exception is not caught
-            // but first the finally block is executed
-            // and then the program crashes
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("ArrayIndexOutOfBoundsException");
-        } finally {
-            System.out.println("finally block");
-        }
+//        try {
+//            System.out.println("First statement of try block");
+//            int num = 23 / 0;
+//            System.out.println("No way! " + num);
+//            // Exception is not caught
+//            // but first the finally block is executed
+//            // and then the program crashes
+//        } catch (ArrayIndexOutOfBoundsException e) {
+//            System.out.println("ArrayIndexOutOfBoundsException");
+//        } finally {
+//            System.out.println("finally block");
+//        }
+//
+//        // Let's also look at try-with-resources
+//        try {
+//            tryWithResourcesExample();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//
+//        // Look at this tricky example
+//        System.out.println(trickyFinally());
 
-        // Let's also look at try-with-resources
-        try {
-            tryWithResourcesExample();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        // Look at this tricky example
-        System.out.println(trickyFinally());
-
-        // And this one too
-        try {
-            return;
-        } finally {
-            System.out.println("Haha!");
-        }
+//        // And this one too
+//        try {
+//            return;
+//        } finally {
+//            System.out.println("Haha!");
+//        }
     }
 
     private void tryWithResourcesExample() throws FileNotFoundException {
@@ -123,19 +123,22 @@ public class TryCatch {
 
     // try-catch block are used for exception handling.
     public static void main(String[] args) {
-        int num1 = 23, num2 = 0;
-        try {
-            num1 /= num2;
-        } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
-        }
-        // Let's add a broader catch block in case of the first catch
-        // block fails to handle the exception
-        catch (Exception e) {
-            // Exception is the super class of all of the exception classes
-            // This is not a good practice. It makes the debugging harder.
-            System.out.println(e.getMessage());
-        }
+//        int num1 = 23, num2 = 0;
+//        try {
+//            num1 /= num2;
+//        } catch (ArithmeticException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//
+//        // Let's add a broader catch block in case of the first catch
+//        // block fails to handle the exception
+//        catch (Exception e) {
+//            // Exception is the super class of all of the exception classes
+//            // This is not a good practice. It makes the debugging harder.
+//            System.out.println(e.getMessage() + " something");
+//        }
+
 
         // We may also have nested try-catch blocks
         // Not a good practice anyway
@@ -176,5 +179,6 @@ public class TryCatch {
 
         ///////////////////////////////////////////////////////////////
         new TryCatch();
+
     }
 }

@@ -22,16 +22,16 @@ package exceptionhandling;
 public class ThrowConcept {
     public ThrowConcept(int age, String university)
             throws CustomCheckedException, UnnecessaryException {
-        if (age < 23)
-            throw new ArithmeticException("Not eligible");
-        else System.out.println("OK");
+//        if (age < 23)
+//            throw new ArithmeticException("Not eligible");
+//        else System.out.println("OK");
 
 //        // Let's try our custom (checked) exception
 //        if (university.toLowerCase().contains("waterloo"))
 //            throw new CustomCheckedException("Bad");
-
-//        // Now trying custom unchecked exception
-//        tryUncheckedException(age);
+//
+        // Now trying custom unchecked exception
+        tryUncheckedException(age);
     }
 
     // Notice that with unchecked exception we don't need throws keyword
@@ -48,6 +48,7 @@ public class ThrowConcept {
         // This is valid syntax to shorten the catch claus chain
         catch (CustomCheckedException | UnnecessaryException e) {
             e.printStackTrace();
+            System.out.println("Hello");
         }
     }
 }
