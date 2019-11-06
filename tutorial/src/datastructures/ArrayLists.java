@@ -24,6 +24,7 @@ package datastructures;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ArrayLists {
@@ -105,6 +106,14 @@ public class ArrayLists {
         // This is the inline way of doing so. We define a way
         // to compare two objects of type University
         // We use lambda expression, a Java 8 syntax here
+
+//        Collections.sort(universities, new Comparator<University>() {
+//            @Override
+//            public int compare(University o1, University o2) {
+//                return 0;
+//            }
+//        });
+
         Collections.sort(universities, (o1, o2) -> {
             if (o1 == null || o2 == null)
                 return 0;
