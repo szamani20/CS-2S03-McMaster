@@ -1,6 +1,7 @@
 out/
 .idea/
 *.iml
+*.ser
 
 ### Linux ###
 *~
@@ -12,6 +13,4 @@ out/
 .Trash-*
 
 .nfs*
-
-.ser*
 
