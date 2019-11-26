@@ -12,3 +12,6 @@ out/
 .Trash-*
 
 .nfs*
+
+.ser*
+

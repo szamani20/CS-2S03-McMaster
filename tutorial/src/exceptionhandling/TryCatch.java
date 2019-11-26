@@ -123,21 +123,21 @@ public class TryCatch {
 
     // try-catch block are used for exception handling.
     public static void main(String[] args) {
-//        int num1 = 23, num2 = 0;
-//        try {
-//            num1 /= num2;
-//        } catch (ArithmeticException e) {
-//            System.out.println(e.getMessage());
-//        }
-//
-//
-//        // Let's add a broader catch block in case of the first catch
-//        // block fails to handle the exception
-//        catch (Exception e) {
-//            // Exception is the super class of all of the exception classes
-//            // This is not a good practice. It makes the debugging harder.
-//            System.out.println(e.getMessage() + " something");
-//        }
+        int num1 = 23, num2 = 0;
+        try {
+            num1 /= num2;
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+
+
+        // Let's add a broader catch block in case of the first catch
+        // block fails to handle the exception
+        catch (Exception e) {
+            // Exception is the super class of all of the exception classes
+            // This is not a good practice. It makes the debugging harder.
+            System.out.println(e.getMessage() + " something");
+        }
 
 
         // We may also have nested try-catch blocks

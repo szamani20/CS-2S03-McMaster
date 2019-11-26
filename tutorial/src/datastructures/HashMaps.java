@@ -31,25 +31,25 @@ public class HashMaps {
         provinceToPopulationMillion.put("Manitoba", 1.2f);
         provinceToPopulationMillion.put("Saskatchewan", 1.1f);
 
-//        // As we mentioned, there is no order!
-//        for (String key : provinceToPopulationMillion.keySet())
-//            System.out.println(key + ": " + provinceToPopulationMillion.get(key));
-//        System.out.println();
-//
-//        System.out.println(provinceToPopulationMillion.containsKey("Quebec"));
-//        System.out.println(provinceToPopulationMillion.containsValue(4.0f));
-//        System.out.println(provinceToPopulationMillion.get("Ontario"));
-//        System.out.println();
-//
-//        for (Float populationMillion : provinceToPopulationMillion.values())
-//            System.out.println(populationMillion);
-//        System.out.println();
+        // As we mentioned, there is no order!
+        for (String key : provinceToPopulationMillion.keySet())
+            System.out.println(key + ": " + provinceToPopulationMillion.get(key));
+        System.out.println();
 
-//        // Another way to print entries.
-//        // If you need both keys and values, user entrySet() as the
-//        // additional call to get() costs more
-//        for (Map.Entry entry : provinceToPopulationMillion.entrySet())
-//            System.out.println(entry.getKey() + ": " + entry.getValue());
+        System.out.println(provinceToPopulationMillion.containsKey("Quebec"));
+        System.out.println(provinceToPopulationMillion.containsValue(4.0f));
+        System.out.println(provinceToPopulationMillion.get("Ontario"));
+        System.out.println();
+
+        for (Float populationMillion : provinceToPopulationMillion.values())
+            System.out.println(populationMillion);
+        System.out.println();
+
+        // Another way to print entries.
+        // If you need both keys and values, user entrySet() as the
+        // additional call to get() costs more
+        for (Map.Entry entry : provinceToPopulationMillion.entrySet())
+            System.out.println(entry.getKey() + ": " + entry.getValue());
 
         // For sorting, based on your need to sort by key or by value
         // there are different approaches.

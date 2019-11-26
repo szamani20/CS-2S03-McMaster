@@ -20,7 +20,7 @@ import java.io.*;
 public class Serialization {
     public Serialization() {
 //        serialize();
-        deserialize();
+//        deserialize();
     }
 
     private void deserialize() {
@@ -47,11 +47,12 @@ public class Serialization {
         // It doesn't print the correct value, since that field
         // is transient and is not serialized.
         System.out.println(std.getStdHeight());
+        System.out.println(std.getStdHeight2());
     }
 
     private void serialize() {
         Student std = new Student("111-111-111",
-                23, "Soroush", 183);
+                23, "Soroush", 183, 183);
         try {
             FileOutputStream fos = new FileOutputStream("student.ser");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -62,8 +63,6 @@ public class Serialization {
             fos.close();
 
             System.out.println("Serialization done");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -78,15 +77,17 @@ public class Serialization {
 class Student implements Serializable {
     private String stdID;
     private int stdAge;
-    private String stdName;
+    private transient String stdName;
     // Not that important to write into file
     private transient int stdHeight;
+    private transient Integer stdHeight2;
 
-    public Student(String stdID, int stdAge, String stdName, int stdHeight) {
+    public Student(String stdID, int stdAge, String stdName, int stdHeight, Integer stdHeight2) {
         this.stdID = stdID;
         this.stdAge = stdAge;
         this.stdName = stdName;
         this.stdHeight = stdHeight;
+        this.stdHeight2 = stdHeight2;
     }
 
     public String getStdID() {
@@ -115,6 +116,14 @@ class Student implements Serializable {
 
     public int getStdHeight() {
         return stdHeight;
+    }
+
+    public Integer getStdHeight2() {
+        return stdHeight2;
+    }
+
+    public void setStdHeight2(Integer stdHeight2) {
+        this.stdHeight2 = stdHeight2;
     }
 
     public void setStdHeight(int stdHeight) {

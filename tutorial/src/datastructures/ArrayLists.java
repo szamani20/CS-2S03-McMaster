@@ -22,17 +22,14 @@ another data structure or not.
 package datastructures;
 
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ArrayLists {
     public ArrayLists() {
 //        arrayListExample();
 //        arrayListExample2();
-//        arrayListExample3();
-        arrayListCheckEfficiency();
+        arrayListExample3();
+//        arrayListCheckEfficiency();
     }
 
     // Basic operations
@@ -143,35 +140,35 @@ public class ArrayLists {
 
     // Advanced operations in ArrayList
     private void arrayListExample3() {
-        // We may define an ArrayList with initial size for memory
-        // efficiency reasons. It could be expanded later on
-        // automatically when adding new elements
-        ArrayList<String> provinces = new ArrayList<>(2);
-        provinces.add("Ontario");
-        provinces.add("Quebec");
-        provinces.add("Alberta");
-        provinces.add("Manitoba");
-        provinces.add("Northwest Territories");
-        provinces.add("British Columbia");
-
-        List<String> countries = new ArrayList<>();
-        countries.add("UK");
-        countries.add("Canada");
-        countries.add("Australia");
-        countries.add("New Zealand");
+//        // We may define an ArrayList with initial size for memory
+//        // efficiency reasons. It could be expanded later on
+//        // automatically when adding new elements
+//        ArrayList<String> provinces = new ArrayList<>(2);
+//        provinces.add("Ontario");
+//        provinces.add("Quebec");
+//        provinces.add("Alberta");
+//        provinces.add("Manitoba");
+//        provinces.add("Northwest Territories");
+//        provinces.add("British Columbia");
+//
+//        List<String> countries = new ArrayList<>();
+//        countries.add("UK");
+//        countries.add("Canada");
+//        countries.add("Australia");
+//        countries.add("New Zealand");
 
 //        // Sublist of ArrayList
 //        List<String> subList = new ArrayList<>(provinces.subList(1, 3));
 //        for (String province : subList)
 //            System.out.println(province);
 //        System.out.println();
-
+//
 //        // Swapping two elements of ArrayList
 //        Collections.swap(provinces, 2, 4);
 //        for (String province : provinces)
 //            System.out.println(province);
 //        System.out.println();
-
+//
 //        // Joining two ArrayList (of same types)
 //        provinces.addAll(countries);
 //        for (String provinceOrCountry : provinces)
@@ -179,27 +176,27 @@ public class ArrayLists {
 //        System.out.println();
 
 
-//        /*
-//        ArrayLists are actually arrays with fixed initial size
-//        that will expand its size whenever that initial size filled
-//        with elements.
-//            int newCapacity = oldCapacity + (oldCapacity >> 1);
-//            elementData = Arrays.copyOf(elementData, newCapacity);
-//        It's a good practice, when working with big ArrayLists, to trim
-//        the additional capacity off the memory when we are sure that
-//        rarely a new item will be added.
-//        There is also ensureCapacity() method that is useful when we
-//        try to add a huge amount of elements to an ArrayList. Without
-//        that method the ArrayList must be extended several times, but
-//        with ensureCapacity() this happens only once.
-//         */
-//        ArrayList<Integer> bigArrayList = new ArrayList<>();
-//        bigArrayList.ensureCapacity(1000000);
-//        for (int i = 0; i < 1000000; i++)
-//            bigArrayList.add(i);
-//        // Now the reserved size may be far more than 1000000
-//        // So we can trim the additional space out
-//        bigArrayList.trimToSize();
+        /*
+        ArrayLists are actually arrays with fixed initial size
+        that will expand its size whenever that initial size filled
+        with elements.
+            int newCapacity = oldCapacity + (oldCapacity >> 1);
+            elementData = Arrays.copyOf(elementData, newCapacity);
+        It's a good practice, when working with big ArrayLists, to trim
+        the additional capacity off the memory when we are sure that
+        rarely a new item will be added.
+        There is also ensureCapacity() method that is useful when we
+        try to add a huge amount of elements to an ArrayList. Without
+        that method the ArrayList must be extended several times, but
+        with ensureCapacity() this happens only once.
+         */
+        ArrayList<Integer> bigArrayList = new ArrayList<>();
+        bigArrayList.ensureCapacity(1000000);
+        for (int i = 0; i < 100000; i++)
+            bigArrayList.add(i);
+        // Now the reserved size may be far more than 1000000
+        // So we can trim the additional space out
+        bigArrayList.trimToSize();
 
 //        // With clone method we can make a copy of an ArrayList items
 //        // into another ArrayList
