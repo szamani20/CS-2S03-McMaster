@@ -18,12 +18,12 @@ public class JavaReflection {
     public JavaReflection() {
         publicReflection();
 
-//        // Doing bad things here! Need a lot of exception handling...
-//        try {
-//            privateReflection();
-//        } catch (NoSuchFieldException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
-//            e.printStackTrace();
-//        }
+        // Doing bad things here! Need a lot of exception handling...
+        try {
+            privateReflection();
+        } catch (NoSuchFieldException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
     }
 
     void privateReflection() throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
@@ -104,8 +104,8 @@ public class JavaReflection {
     }
 }
 
-//class CustomClassReflection {
-class CustomClassReflection extends Serialization {
+class CustomClassReflection {
+//class CustomClassReflection extends Serialization {
     String name;
     private int age;
     public Double credit;
